@@ -1,0 +1,16 @@
+package grid;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class GridEg1 {
+
+	public static void main(String[] args) 
+	{
+		DesiredCapabilities cap=DesiredCapabilities.firefox();
+		WebDriver driver=new RemoteWebDriver(remoteAddress, desiredCapabilities)
+
+	}
+
+}

@@ -1,0 +1,56 @@
+package methods;
+
+public class TestSuite {
+
+	public static void main(String[] args) 
+	{
+		//Login
+		OrgHrmLib  om=new OrgHrmLib();
+		
+		String res=om.OrgLaunch("http://opensource.demo.orangehrmlive.com");
+		System.out.println("Application Launch "+res);
+		
+		res=om.OrgLogin("Admin", "admin");
+		System.out.println("Application Login "+res);
+		
+		res=om.OrgLogout();
+		System.out.println("Application Logout "+res);
+		
+		om.OrgClose();
+		System.out.println("Application Closed Successfully");
+		
+		//EmpReg
+		res=om.OrgLaunch("http://opensource.demo.orangehrmlive.com");
+		System.out.println("Application Launch "+res);
+		
+		res=om.OrgLogin("Admin", "admin");
+		System.out.println("Application Login "+res);
+		
+		res=om.OrgEmpReg("Vignan", "Kumar");
+		System.out.println("Employee Registration "+res);
+		
+		res=om.OrgLogout();
+		System.out.println("Application Logout "+res);
+		
+		om.OrgClose();
+		System.out.println("Application Closed Successfully");
+		
+		//Userreg
+		
+		res=om.OrgLaunch("http://opensource.demo.orangehrmlive.com");
+		System.out.println("Application Launch "+res);
+		
+		res=om.OrgLogin("Admin", "admin");
+		System.out.println("Application Login "+res);
+		
+		res=om.OrgUserReg("Vignan Kumar", "VignaKumar123456", "VignaKumar123456", "VignaKumar123456");
+		System.out.println("User Registration "+res);
+		
+		res=om.OrgLogout();
+		System.out.println("Application Logout "+res);
+		
+		om.OrgClose();
+		System.out.println("Application Closed Successfully");
+	}
+
+}

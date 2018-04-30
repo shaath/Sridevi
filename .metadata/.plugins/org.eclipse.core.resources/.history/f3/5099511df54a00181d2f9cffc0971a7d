@@ -1,0 +1,16 @@
+package methods;
+
+public class LoginTC {
+
+	public static void main(String[] args) 
+	{
+		OrgHrmLib  om=new OrgHrmLib();
+		
+		String res=om.OrgLaunch("http://opensource.demo.orangehrmlive.com");
+		System.out.println("Application Launch "+res);
+		
+		
+
+	}
+
+}

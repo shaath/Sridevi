@@ -1,0 +1,11 @@
+package methods;
+
+public class UserRegTC {
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

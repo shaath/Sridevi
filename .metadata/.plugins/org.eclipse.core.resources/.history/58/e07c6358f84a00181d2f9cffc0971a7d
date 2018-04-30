@@ -1,0 +1,5 @@
+########### OrgHRM App Properties
+
+#####Login Page
+##Id propery of Username textbox
+username=txtUsername
